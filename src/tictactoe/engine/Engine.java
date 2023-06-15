@@ -70,15 +70,15 @@ public final class Engine {
      * @return true, if a player has occupied three cells in a diagonal row.
      */
     private static boolean hasThreeInADiagonalRow(char[][] grid, char player) {
-        boolean a = grid[TicTacToeConstants.ZERO][TicTacToeConstants.ZERO] == player
+        boolean firstDiagonalRow = grid[TicTacToeConstants.ZERO][TicTacToeConstants.ZERO] == player
                 && grid[TicTacToeConstants.ONE][TicTacToeConstants.ONE] == player
                 && grid[TicTacToeConstants.TWO][TicTacToeConstants.TWO] == player;
 
-        boolean b = grid[TicTacToeConstants.ZERO][TicTacToeConstants.TWO] == player
+        boolean secondDiagonalRow = grid[TicTacToeConstants.ZERO][TicTacToeConstants.TWO] == player
                 && grid[TicTacToeConstants.ONE][TicTacToeConstants.ONE] == player
                 && grid[TicTacToeConstants.TWO][TicTacToeConstants.ZERO] == player;
 
-        return a || b;
+        return firstDiagonalRow || secondDiagonalRow;
     }
 
     /**
