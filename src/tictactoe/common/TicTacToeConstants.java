@@ -21,5 +21,4 @@ public final class TicTacToeConstants {
     public static final String NUMBER_FORMAT_ERROR = "You should enter numbers!";
     public static final String COORDINATE_BOUNDARIES_ERROR = "Coordinates should be from %d to %d!";
     public static final String OCCUPIED_CELL_ERROR = "This cell is occupied! Choose another one!";
-
 }
